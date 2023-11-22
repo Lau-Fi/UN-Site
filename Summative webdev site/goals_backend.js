@@ -1,3 +1,5 @@
+//JS backend for goals page
+
 let testp = document.createElement("h2");
 
 testp.textContent = "Goals";
