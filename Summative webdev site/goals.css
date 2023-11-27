@@ -3,5 +3,179 @@ h2{
     background-color: #009EDB;
     display: flex;
     justify-content: center;
+    position: relative;
+    top: -22px;
 
 }
+
+#logo{
+    width: 35%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    position: relative;
+
+}
+
+#home_button{
+  background-color: #04AA6D; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  position: absolute;
+  margin: 0;
+  top: 10%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  
+}
+
+#about_button{
+    background-color: #04AA6D; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: absolute;
+    margin: 0;
+    top: 10%;
+    left: 25%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    
+  }
+
+  #goals_button{
+    background-color: #04AA6D; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: absolute;
+    margin: 0;
+    top: 10%;
+    left: 64%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    
+  }
+
+  #signup_button{
+    background-color: #04AA6D; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: absolute;
+    margin: 0;
+    top: 10%;
+    left: 88%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  #content_section{
+    background-color: lightskyblue;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    bottom: -200px;
+  }
+
+  @media screen and (max-width: 320px) {
+    #logo{
+      width: 100%;
+      height: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      position: relative;
+  
+  }
+  
+  #home_button{
+    background-color: #04AA6D; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: absolute;
+    margin: 0;
+    top: 40%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    
+  }
+  
+  #about_button{
+      background-color: #04AA6D; 
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      position: absolute;
+      margin: 0;
+      top: 50%;
+      left: 2.5%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      
+    }
+  
+    #goals_button{
+      background-color: #04AA6D; 
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      position: absolute;
+      margin: 0;
+      top: 60%;
+      left: 2.5%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      
+    }
+  
+    #signup_button{
+      background-color: #04AA6D; 
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      position: absolute;
+      margin: 0;
+      top: 70%;
+      left: 2.5%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+  }
