@@ -1,0 +1,47 @@
+*{
+    font-family: "metropolis", sweet-sans, sans-serif;
+}
+
+header {
+    text-align: center; /** sets the text to the centre of the page **/
+    
+}
+
+
+
+ul {
+    list-style-type: none; /* No bullet points */
+}
+
+a {
+    text-decoration: none; /* Removes any decoration on the text e.g, underline */
+}
+
+a:link{ /* The links/text in the nav bar */
+    color: black;
+}
+
+a:hover {
+    background-color: #b5a8e0;
+}
+
+footer{ /* general footer for all pages **/
+    text-align: center;
+    padding: 5px;
+    color: #ffffff;
+    background-color: #673bf5;
+}
+
+nav {
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.navigation {
+    display: inline-block;
+    background-color: #3bf59b;
+}
+
+.active {
+    background-color: rgb(150, 108, 198);
+}
