@@ -59,6 +59,36 @@ goals.push(goal1, goal2, goal3);
 console.log(goals)
 console.log(goals.length);
 
+goals.map((element) => {
+    console.log(`element ${element.id}`)
+})
+ 
 const page_center = document.querySelector("#section-center");
 
 //function to load the content of HTML
+
+function DynamicLoad(){
+    let display_element = goals.map( (item) => {
+        return `
+        <article class = "element">
+        <img src = ${item.img} alt=${item.goal_catagory} id=${item.id} class = "goal_pic"/>
+        <div class = "goal-info">
+        <div class = "goal-header">
+            <h4>${item.goal_title}</h4>
+        </div>
+            <p class = "goal-desc">
+            ${item.goal_desc}
+            </p>
+        </div>
+        </article>
+        `;
+    });
+
+    display_element = display_element.join("");
+    console.log(display_element);
+    page_center.innerHTML = display_element;
+    page_center.addEventListener("click", ClickGoal);
+
+};
+
+window.addEventListener("DOMContentLoaded", DynamicLoad, false);
