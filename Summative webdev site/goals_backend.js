@@ -35,11 +35,13 @@ var s_button = document.createElement("button")
 s_button.textContent = "Sign Up"
 document.getElementById('signup_button').appendChild(s_button)
 
+//Show and hide button creation
+
 var hide_showbutton = document.createElement("button")
 hide_showbutton.textContent = "Toggle Navigation Options"
-document.getElementById('hideshow').appendChild(hide_showbutton)
-let hs = document.querySelector("hideshow")
-hideshow.addEventListener("click", ToggleFunction())
+document.getElementById('button_div').appendChild(hide_showbutton)
+let butt = document.querySelector("#button_div");
+butt.addEventListener("click", ShowHide);
 
 //
 
@@ -114,12 +116,14 @@ function ClickGoal(check){
         }
     }
 }
-
-function ToggleFunction() {
-    var butt = document.getElementById("navbuttons");
-    if (butt.style.display === "none") {
-        butt.style.display = "block";
+function myFunction() {
+    let links = document.querySelector(".mainNav");
+    links.classList.toggle("button_div")
+}
+function ShowHide() {
+    if (document.getElementById("navbuttons").style.display == "none"){
+        document.getElementById("navbuttons").style.display = 'block';
     } else{
-        butt.style.display = "none";
-    }
-};
+        document.getElementById("navbuttons").style.display = 'none';
+    };
+}
