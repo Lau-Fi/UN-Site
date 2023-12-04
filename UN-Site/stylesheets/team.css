@@ -1,0 +1,162 @@
+/* General styles */
+
+*{
+    font-family: "metropolis", sweet-sans, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+head { /** sets the background of the whole page to white **/
+    background-color:#fff;
+}
+
+body {
+    font-size: 16px;
+    color: black;
+    line-height: 1.2;
+}
+
+header {
+    text-align: center; /** sets the text to the centre of the page **/
+    background-color: aqua;
+    padding: 25px;
+}
+
+header ul {
+    list-style-type: none; /* No bullet points */
+}
+
+header a {
+    text-decoration: none; /* Removes any decoration on the text e.g, underline */
+    padding: 5px;
+    border-width: 2px;
+    margin: 2px;
+}
+
+ /* For the links/text in the nav bar */
+header a:link, header a:visited{ 
+    color: black;
+}
+
+footer { /* general footer for all pages **/
+    /* creates fixed footer */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    text-align: center;
+    padding: 30px;
+    color: #ffffff;
+    background-color: #673bf5;
+}
+
+nav {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    /* padding-right: 40px; */
+    margin: 20px, 50px;
+    font-size: 20px;
+}
+
+.navigation {
+    display: inline-block;
+    padding: 15px;
+    font-size:18px;
+    /* background-color: #3bf59b; */
+
+}
+
+.navigation:hover {border: #ffffff solid 2px;
+    background-color: #ccf30c;
+    
+    margin: 0px;
+    cursor: pointer;
+}
+
+.active {
+    background-color: rgb(150, 108, 198);
+    border: #ffffff solid 2px;  
+}
+
+/* team.html styles */
+
+main{
+    text-align: center;
+    display: block;
+    margin: auto, 16%;
+    padding: 10px;
+    font-size: 17px; 
+
+}
+
+h2 {
+    font-size: 25px;
+}
+
+p {
+    font-size: 17px;
+}
+
+/* .item-split {
+    float: left;
+    padding: 30px;
+    margin: 5%;
+} */
+
+.item-split { /* Puts everything next to each other in a line/on a row */
+    display: inline-block;
+    /* padding: auto 25px auto 25px; */
+    padding: 25px;
+    margin: 2.5%;
+    /* padding: 24px 11px; *top + bottom = 24, left + right = 11 *
+    margin: auto auto 20px 5px; */
+    /* height: 100%; */
+    width: 15%;
+    
+    text-align: center;
+    border: solid 1px red;
+    border-radius: 20px;
+    /* box-sizing: border-box; *browser takes into account the padding set on the border * */
+}
+
+/* change the formatting to be as each section of the team displays without the css */
+/* implement wrapper */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#photohome {
+    float: left; /** lets text go to the right of the image */
+    width: 150px;
+}
+
+/* img {
+    max-width: 100%;
+    height: auto;
+} */
