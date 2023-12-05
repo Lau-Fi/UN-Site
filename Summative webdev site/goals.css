@@ -1,95 +1,106 @@
-h2{
-    color: black;
-    background-color: #009EDB;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: -22px;
-    margin-left: 0px;
-    margin-right: 0px;
+/* General styles */
 
-}
-
-#logo{
-    width: 35%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    position: relative;
-
-}
-
-#home_button{
-  background-color: #009EDB; 
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  position: absolute;
+*{
+  font-family: "metropolis", sweet-sans, sans-serif;
   margin: 0;
-  top: 10%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  
+  padding: 0;
 }
 
-#about_button{
-    background-color: #009EDB; 
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    position: absolute;
-    margin: 0;
-    top: 10%;
-    left: 25%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    
-  }
+head { /** sets the background of the whole page to white **/
+  background-color:#fff;
+}
 
-  #goals_button{
-    background-color: #009EDB; 
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    position: absolute;
-    margin: 0;
-    top: 10%;
-    left: 64%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    
-  }
+body {
+  font-size: 16px;
+  color: black;
+  line-height: 1.2;
+}
 
-  #signup_button{
-    background-color: #673BF5; 
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    position: absolute;
-    margin: 0;
-    top: 10%;
-    left: 88%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-  }
+header {
+  text-align: center; /** sets the text to the centre of the page **/
+  background-color: #009ED8;
+  padding: 25px;
+}
+
+#goals_header {
+  font-size: 25px;
+  font-style: italic;
+}
+
+
+header ul {
+  list-style-type: none; /* No bullet points */
+}
+
+header a {
+  text-decoration: none; /* Removes any decoration on the text e.g, underline */
+  padding: 5px;
+  border-width: 2px;
+  margin: 2px;
+}
+
+/* For the links/text in the nav bar */
+header a:link, header a:visited{ 
+  color: black;
+}
+
+footer { /* general footer for all pages **/
+  /* creates fixed footer */
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+  text-align: center;
+  padding: 30px;
+  color: #ffffff;
+  background-color: #673bf5;
+}
+
+nav {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  /* padding-right: 40px; */
+  margin: 20px, 50px;
+  font-size: 20px;
+}
+
+.navigation {
+  display: inline-block;
+  padding: 15px;
+  font-size:18px;
+  background-color: #009ED8;
+
+}
+
+.navigation:hover {
+  background-color: #ccf30c;
+  border: #ffffff solid 2px;
+  margin: 0px;
+  cursor: pointer;
+}
+
+.active {
+  background-color: rgb(150, 108, 198);
+}
+
+/* index.html styles */
+
+main{
+  text-align: center;
+  display: block;
+  margin: auto, 16%;
+  padding: 10px;
+  font-size: 17px; 
+}
+
+h2 {
+  font-size: 25px;
+}
+
+p {
+  font-size: 17px;
+}
 
   #content_section{
     background-color: lightskyblue;
@@ -114,30 +125,10 @@ h2{
     display: flex;
     flex-wrap: wrap;
     }
-  
+    
+   
 
-  @media screen and (max-width:800px) {
-    #logo{
-      width: 55%;
-      height: auto;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      display: flex;
-      position: relative;
-  
-  }}
   @media screen and (max-width:750px) {
-    #logo{
-      width: 75%;
-      height: auto;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      display: flex;
-      position: relative;
-  
-  }
   
   #home_button{
     background-color: #009EDB; 

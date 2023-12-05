@@ -2,38 +2,17 @@
 
 //Page Heading
 
-let testp = document.createElement("h2");
+let headp = document.createElement("header");
 
-testp.textContent = "Goals";
+headp.textContent = "SAC Goals";
 
-let bodyElement = document.querySelector("h2");
+headp.id = "goals_header";
 
-bodyElement.parentNode.insertBefore(testp, bodyElement);
+let bodyElement = document.querySelector("header");
 
-/// Page logo
-var image = document.createElement('img');
-image.src = "Website_Logo.png"
-image.id = "logo"
-document.getElementById('logo').appendChild(image)
+bodyElement.parentNode.insertBefore(headp, bodyElement);
 
 
-/// Navigation buttons
-
-var h_button = document.createElement("button")
-h_button.textContent = "Home"
-document.getElementById('home_button').appendChild(h_button)
-
-var a_button = document.createElement("button")
-a_button.textContent = "About Us"
-document.getElementById('about_button').appendChild(a_button)
-
-var g_button = document.createElement("button")
-g_button.textContent = "Goals"
-document.getElementById('goals_button').appendChild(g_button)
-
-var s_button = document.createElement("button")
-s_button.textContent = "Sign Up"
-document.getElementById('signup_button').appendChild(s_button)
 
 //Show and hide button creation
 
