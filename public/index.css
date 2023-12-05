@@ -1,0 +1,56 @@
+*{
+    font-family: "metropolis", sans-serif;
+}
+
+header{
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+    background-color: #009edb;
+}
+
+header a{
+    background-color: #673BF5;
+    color: #ffffff;
+    padding: 5px;
+    border-width: 2px;
+    margin: 2px;
+}
+
+header a:hover{
+    background-color: #623ccc;
+    border: #ffffff solid 2px;
+    margin: 0px;
+    cursor: pointer;
+}
+
+footer{
+    text-align: center;
+    padding: 5px;
+    color: #ffffff;
+    background-color: #673bf5;
+}
+
+main{
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+#home section{
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px 0px;
+}
+
+#home #photoHome{
+    width: 30%;
+}
+
+#home img{
+    width: 90%;
+}
+
+#home #information{
+    width: 55%;
+}
