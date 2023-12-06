@@ -1,0 +1,17 @@
+form{
+    display: inline-block;
+    width: 50%;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+fieldset{
+    text-align: center;
+    border-radius: 20px;
+}
+
+input{
+    display: block;
+    margin: 2px 0px;
+    width: 98%;
+}
