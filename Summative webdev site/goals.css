@@ -46,7 +46,7 @@ header a:link, header a:visited{
 
 footer { /* general footer for all pages **/
   /* creates fixed footer */
-  position: fixed;
+  position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -74,10 +74,15 @@ nav {
 }
 
 .navigation:hover {
-  background-color: #ccf30c;
+  background-color: #3BF5EE;
   border: #ffffff solid 2px;
   margin: 0px;
   cursor: pointer;
+}
+
+#footer{
+  position: relative;
+  top: 0px;
 }
 
 .active {

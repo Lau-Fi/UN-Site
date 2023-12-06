@@ -22,9 +22,17 @@ document.getElementById('button_div').appendChild(hide_showbutton)
 let butt = document.querySelector("#button_div");
 butt.addEventListener("click", ShowHide);
 
-//
+// Footer
 
+let footp = document.createElement("footer")
 
+footp.textContent = "Copyright 2023 James Barnard, Liam Barry and Laurence Beven"
+
+footp.id = "footer"
+
+let footerElement = document.querySelector("#section-center")
+
+footerElement.insertAdjacentElement("afterend", footp)
 
 ///The Main Goals Content.
 
@@ -106,3 +114,4 @@ function ShowHide() {
         document.getElementById("navbuttons").style.display = 'none';
     };
 }
+
