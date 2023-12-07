@@ -18,8 +18,14 @@ body {
 
 header {
     text-align: center; /** sets the text to the centre of the page **/
-    background-color: aqua;
+    background-color: #009ED8;
     padding: 25px;
+}
+
+header h2 {
+    font-size: 26px;
+    margin-top: 0;
+    margin-bottom: 1%;
 }
 
 header ul {
@@ -31,6 +37,7 @@ header a {
     padding: 5px;
     border-width: 2px;
     margin: 2px;
+    
 }
 
  /* For the links/text in the nav bar */
@@ -39,12 +46,7 @@ header a:link, header a:visited{
 }
 
 footer { /* general footer for all pages **/
-    /* creates fixed footer */
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-
+    display: block;
     text-align: center;
     padding: 30px;
     color: #ffffff;
@@ -54,7 +56,6 @@ footer { /* general footer for all pages **/
 nav {
     text-align: center;
     color: rgb(0, 0, 0);
-    /* padding-right: 40px; */
     margin: 20px, 50px;
     font-size: 20px;
 }
@@ -63,20 +64,21 @@ nav {
     display: inline-block;
     padding: 15px;
     font-size:18px;
-    /* background-color: #3bf59b; */
-
+    border: #ffffff00 solid 2px;
 }
 
-.navigation:hover {border: #ffffff solid 2px;
+.navigation:hover {
+    border: #ffffff solid 2px;
     background-color: #ccf30c;
-    
-    margin: 0px;
+    /* font-weight: bold; */
+    padding: 15px;
     cursor: pointer;
 }
 
 .active {
     background-color: rgb(150, 108, 198);
     border: #ffffff solid 2px;  
+    font-weight: bold;
 }
 
 /* team.html styles */
@@ -87,10 +89,10 @@ main{
     margin: auto, 16%;
     padding: 10px;
     font-size: 17px; 
-
 }
 
 h2 {
+    margin: 1%;
     font-size: 25px;
 }
 
@@ -98,31 +100,35 @@ p {
     font-size: 17px;
 }
 
-/* .item-split {
-    float: left;
-    padding: 30px;
-    margin: 5%;
-} */
-
 .item-split { /* Puts everything next to each other in a line/on a row */
     display: inline-block;
+    vertical-align: top;
     /* padding: auto 25px auto 25px; */
     padding: 25px;
     margin: 2.5%;
-    /* padding: 24px 11px; *top + bottom = 24, left + right = 11 *
-    margin: auto auto 20px 5px; */
-    /* height: 100%; */
-    width: 15%;
+    height: 450px;
+    width: 20%;
     
     text-align: center;
-    border: solid 1px red;
+    border: solid 1.75px #2134ad;
     border-radius: 20px;
-    /* box-sizing: border-box; *browser takes into account the padding set on the border * */
+}
+
+
+.photo {
+    width: 170px;
+    /* height: 30%; */
 }
 
 /* change the formatting to be as each section of the team displays without the css */
 /* implement wrapper */
 
+
+@media only screen and (max-width: 768px) {
+    .item-split {
+        display: inline;
+    }
+}
 
 
 

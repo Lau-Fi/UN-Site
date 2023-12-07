@@ -1,19 +1,18 @@
 // Create objects for each member to repeatedly create the html elements
 class TeamMember {
-    constructor(id, name, role, responsibility, contributions, bio, photo){
+    constructor(id, name, role, contributions, bio, photo){
         this.id = id;
         this.name = name;
         this.role = role;
-        this.responsible = responsibility;
         this.contributions = contributions;
         this.bio = bio;
         this.photo = photo;
     }
 }
 
-const teamMember1 = new TeamMember(1, "Liam Barry", "role", "Merge Code", "Navigation, Home and Team pages", "I am a Computer Science student studying at UEA. As a career, I would like to work in software engineering. Outside of computing, I enjoy sport, particularly football, F1 and triathlons.", "images/placeholder.jpg");
-const teamMember2 = new TeamMember(2, "James Barnard", "role", "Merge Code", "SignUp Page Code", "Likes games", "images/placeholder.jpg");
-const teamMember3 = new TeamMember(3, "Laurence Beven", "role", "Merge Code", "idk", "Likes football", "images/placeholder.jpg");
+const teamMember1 = new TeamMember(1, "Liam Barry", "Team Member", "Navigation, Home and Team pages", "Liam is a Computer Science student studying at UEA. As a career, he would like to work in software engineering. Outside of computing, he enjoys sport, particularly football, F1 and triathlons.", "images/IMG_LMB.jpg");
+const teamMember2 = new TeamMember(2, "James Barnard", "Team Member", "SignUp Page and Combining Code", "James is a Computer Science student at UEA. He hopes to find a career as a programmer after finishing his studies. Outside of study, he enjoys board and computer games, video essays, and media dissection.", "images/IMG_JB.jpg");
+const teamMember3 = new TeamMember(3, "Laurence Beven", "Team Leader", "Goals page and documentation", "Laurence is a Business Information Systems undergraduate, interested in the interaction between people and software for many years. He has managed to provide a great working environment in order to fulfill the project.", "images/IMG_LB.jpg");
 
 
 const members = [];
@@ -22,12 +21,6 @@ members.push(teamMember2);
 members.push(teamMember3);
 
 console.log(members.length);
-
-//ignore
-members.map((item) => {
-    console.log(`item ${item.id}`); //uses backtick ( ` );
-    console.log(item.name);
-})
 
 const infoSection = document.querySelector("#info-section");
 
@@ -39,8 +32,8 @@ function loadContent() {
         <div class="item-info">
         <div class="item-header">
         <h4>${item.name}</h4>
-            <h4 class="role">${item.role}</h4>
-            <h5 class="contribution">${item.contributions}</h5>
+            <h4 class="role">Role:\n${item.role}</h4>
+            <h5 class="contribution">Contribution:\n${item.contributions}</h5>
         </div>
             <p class="item-text">
             ${item.bio}
