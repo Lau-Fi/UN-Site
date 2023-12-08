@@ -4,7 +4,9 @@
   font-family: "metropolis", sweet-sans, sans-serif;
   margin: 0;
   padding: 0;
+  color: black;
 }
+
 
 head { /** sets the background of the whole page to white **/
   background-color:#fff;
@@ -14,6 +16,7 @@ body {
   font-size: 16px;
   color: black;
   line-height: 1.2;
+  background-color: white;
 }
 
 header {
@@ -61,7 +64,7 @@ nav {
   text-align: center;
   color: rgb(0, 0, 0);
   /* padding-right: 40px; */
-  margin: 20px, 50px;
+  margin: 20px 50px;
   font-size: 20px;
 }
 
@@ -89,12 +92,13 @@ nav {
   background-color: rgb(150, 108, 198);
 }
 
+
 /* index.html styles */
 
 main{
   text-align: center;
   display: block;
-  margin: auto, 16%;
+  margin: auto 16%;
   padding: 10px;
   font-size: 17px; 
 }
@@ -126,9 +130,11 @@ p {
     margin-right: auto;
     margin-left: auto;
     margin-bottom: auto;
-    background-color: #fff9e8;
+    background-color: white;
     display: flex;
     flex-wrap: wrap;
+    border-width: 10px;
+    color: black;
     }
     
    
@@ -213,7 +219,7 @@ p {
     margin-right: auto;
     margin-left: auto;
     margin-bottom: auto;
-    background-color: #fff9e8;
+    background-color: white;
     display: flex;
     flex-wrap: wrap;
     }
@@ -285,6 +291,10 @@ p {
       left: 84%;
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
+    }
+
+    .access_buttons {
+      display: block;
     }
   
     .showButtons{

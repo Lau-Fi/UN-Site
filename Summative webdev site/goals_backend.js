@@ -12,6 +12,18 @@ let bodyElement = document.querySelector("header");
 
 bodyElement.parentNode.insertBefore(headp, bodyElement);
 
+//Navigation Buttons
+texts = ["Home", "Goals", "Team", "Sign-Up"]
+hrefs = ["index.html", "goals.html", "team.html", "signup.html"]
+const parentob = document.getElementsByClassName('navigation');
+
+[...parentob].forEach((parent, i) => {
+    var navbutton = document.createElement("a")
+    navbutton.textContent = texts[i]
+    navbutton.href = hrefs[i]
+    parent.appendChild(navbutton)
+});
+
 
 
 //Show and hide button creation
@@ -21,6 +33,32 @@ hide_showbutton.textContent = "Toggle Navigation Options"
 document.getElementById('button_div').appendChild(hide_showbutton)
 let butt = document.querySelector("#button_div");
 butt.addEventListener("click", ShowHide);
+
+//Acessibility show/hide Button creation
+
+var access_toggle = document.createElement("button")
+access_toggle.textContent="Accessibility Feature"
+document.getElementById("access").appendChild(access_toggle)
+let butt2 = document.querySelector("#access");
+butt2.addEventListener("click", ShowHide2)
+
+//Acessibility Buttons Creation
+
+texts = ["Enlarge Text", "High Contrast Switch"]
+const accessbutt = document.getElementsByClassName('bility');
+
+[...accessbutt].forEach((parent, i) => {
+    var accbutton = document.createElement("button")
+    accbutton.textContent = texts[i]
+    accbutton.href = hrefs[i]
+    if (accbutton.textContent == "Enlarge Text"){
+        accbutton.addEventListener("click", EnlargeFunc)
+    } else {
+        accbutton.addEventListener("click", ColourFunc)
+    };
+    parent.appendChild(accbutton)
+});
+
 
 // Footer
 
@@ -73,6 +111,7 @@ function DynamicLoad(){
         <div class = "goal-header">
             <h4>${item.goal_title}</h4>
         </div>
+        <br>
             <p class = "goal-desc">
             ${item.goal_desc}
             </p>
@@ -97,16 +136,15 @@ function ClickGoal(check){
         const targetID = check.target.id;
         console.log(targetID);
         const item = goals.find( i => i.id == targetID);
-        console.log( item.goal_title );
         if (typeof item !== "undefined"){
             alert(item.alt_text);
         }
     }
 }
-function myFunction() {
-    let links = document.querySelector(".mainNav");
-    links.classList.toggle("button_div")
-}
+// function myFunction() {
+//     let links = document.querySelector(".mainNav");
+//     links.classList.toggle("button_div")
+// }
 function ShowHide() {
     if (document.getElementById("navbuttons").style.display == "none"){
         document.getElementById("navbuttons").style.display = 'block';
@@ -115,3 +153,36 @@ function ShowHide() {
     };
 }
 
+function ShowHide2() {
+    if (document.getElementById("access_buttons").style.display == "block") {
+        document.getElementById("access_buttons").style.display = "none";
+    } else {
+        document.getElementById("access_buttons").style.display = "block"; 
+    };
+}
+
+function ColourFunc() {
+    console.log("Colour Func run")
+    const goal_header = document.querySelectorAll('.goal-header > h4');
+    const goal_text = document.querySelectorAll('.goal-desc');
+    if (document.body.style.backgroundColor == "white") {
+        document.body.style.backgroundColor = "black";
+        document.getElementById("section-center").style.backgroundColor = "black";
+        goal_header.forEach(element => {
+            element.style.color = 'white';
+        });
+        goal_text.forEach(element => {
+            element.style.color = "white";
+        });
+    } else {
+        document.body.style.backgroundColor = "white";
+        document.getElementById("section-center").style.backgroundColor = "white";
+        goal_header.forEach(element => {
+            element.style.color = 'black';
+    });
+}
+
+}
+function EnlargeFunc() {
+    console.log("Enlarge func run")
+    }
