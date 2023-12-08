@@ -6,9 +6,9 @@ function loadHeader() {
     <h2>Sustainability Advisory Committee</h2>
         <nav>
             <ul>
-                <li class="navigation active"><a href="index.html">Home</a></li>
-                <li class="navigation"><a href="test.html">Goals</a></li>
-                <li class="navigation"><a href="team.html">Team</a></li>
+                <li class="navigation"><a href="index.html">Home</a></li>
+                <li class="navigation"><a href="goals.html">Goals</a></li>
+                <li class="navigation active"><a href="team.html">Team</a></li>
                 <li class="navigation"><a href="signup.html">Sign-up</a></li>
             </ul>
         </nav>
@@ -60,6 +60,5 @@ function loadPageContent() {
 }
 
 window.addEventListener("DOMContentLoaded", loadPageContent, false);
-
 
 
