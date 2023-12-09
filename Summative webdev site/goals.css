@@ -13,7 +13,7 @@ head { /** sets the background of the whole page to white **/
 }
 
 body {
-  font-size: 16px;
+  font-size: medium;
   color: black;
   line-height: 1.2;
   background-color: white;

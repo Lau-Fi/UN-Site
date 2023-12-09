@@ -179,10 +179,41 @@ function ColourFunc() {
         document.getElementById("section-center").style.backgroundColor = "white";
         goal_header.forEach(element => {
             element.style.color = 'black';
-    });
-}
+        });
+        goal_text.forEach(element => {
+            element.style.color = "black";
+        });
+    }
 
 }
 function EnlargeFunc() {
-    console.log("Enlarge func run")
+    const goal_header = document.querySelectorAll('.goal-header > h4');
+    const goal_text = document.querySelectorAll('.goal-desc');
+    if (document.body.style.fontSize == "medium") {
+        console.log("Enlarge func run")
+        document.body.style.fontSize = "x-large";
+        document.getElementById('section-center').style.fontSize = "x-large";
+        goal_header.forEach(element => {
+            element.style.fontSize = "x-large";
+        })
+        goal_text.forEach(element => {
+            element.style.fontSize = "x-large"
+        })
+    } else {
+        document.body.style.fontSize = "medium";
+        document.getElementById('section-center').style.fontSize = "medium";
+        goal_header.forEach(element => {
+            element.style.fontSize = "large";
+        })
+        goal_text.forEach(element => {
+            element.style.fontSize = "medium"
+        });
     }
+    
+};
+
+
+
+
+
+
