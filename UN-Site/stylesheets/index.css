@@ -81,8 +81,6 @@ nav {
     font-weight: bold;
 }
 
-/* index.html styles */
-
 main{
     text-align: center;
     display: block;
@@ -110,17 +108,23 @@ p {
     border-radius: 10px;
 }
 
+#info-header {
+    margin-right: 300px;
+}
+
 .info-para {
     display: block;
     text-align: left;
-    /* padding-top: 3%; */
     padding-left: 1%;
     font-size: 20px;
 }
 
 .photo {
     float: left;
+    margin-top: 20px;
     margin-right: 20px;
+    margin-bottom: 20px;
+    width: 300px;
 }
 
 .video {
@@ -129,20 +133,13 @@ p {
     height: 245px;
 }
 
-
-
-
-
-
-
-
-
 #photohome {
     float: left; /** lets text go to the right of the image */
     width: 150px;
 }
 
-/* img {
-    max-width: 100%;
-    height: auto;
-} */
+@media only screen and (max-width: 768px) {
+    body {
+        color: red;
+    }
+}

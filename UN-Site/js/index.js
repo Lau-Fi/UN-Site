@@ -27,17 +27,19 @@ foot.appendChild(newp);
 
 // Object for the content
 class information {
-    constructor (type, className, source, title, content){
+    constructor (type, className, source, title, content, link, linkText){
         this.type = type;
         this.className = className;
         this.source = source;
         this.title = title;
         this.content = content;
+        this.link = link;
+        this.linkText = linkText;
     }
 }
-
-const infoOne = new information("img", "photo", "images/placeholder.jpg", "UN Sustainability Plan", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
-const infoTwo = new information("iframe", "video", "https://www.youtube.com/embed/0XTBYMfZyrM", "THink of title for this bit", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+// https://international-partnerships.ec.europa.eu/policies/sustainable-development-goals_en - img
+const infoOne = new information("img", "photo", "images/SustainabilityGoals.png", "UN Sustainability Plan", "In 2015, all United Nations Member States adopted the 2030 Agenda for Sustainable Development, which provides a shared blueprint for peace and prosperity for people and the planet. It is made up of 17 Sustainable Development Goals, ranging from Quality Education to Affordable and Clean Energy. The Sustainable Development Goals are built on decodes of work by countries and the UN to create a better world for both now and the future.", "https://www.un.org/sustainabledevelopment/sustainable-development-goals/", "Click here to read more.");
+const infoTwo = new information("iframe", "video", "https://www.youtube.com/embed/0XTBYMfZyrM", "In 2023...", "In the 2023 review of the Sustainable Development Goals, it was found that incremental and fragmented change will be insufficient to achieve the goals by the 2030 deadline. The report highlights key changes needed in order to try and accomodate the deadline. It must be a team effort achieved globally. Find out more at:", "https://sdgs.un.org/gsdr/gsdr2023#:~:text=The%20Global%20Sustainable%20Development%20Report%202023&text=Implementation%20of%20the%202030%20Agenda,country%2C%20society%20or%20person%20behind.", "Click here to read the full report.");
 const info = [];
 info.push(infoOne, infoTwo);
 
@@ -49,8 +51,9 @@ function loadPageContent() {
         return `
         <article id="info">
             <${item.type} class="${item.className}" src="${item.source}"></${item.type}>
-            <h2>${item.title}</h2>
-            <p class="info-para">${item.content}</p>
+            <h2 id="info-header">${item.title}</h2>
+            <p class="info-para">${item.content} <a href="${item.link}">${item.linkText}</a> </p>
+            
         </article>
         `;
     })

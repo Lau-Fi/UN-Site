@@ -100,69 +100,39 @@ p {
     font-size: 17px;
 }
 
-.item-split { /* Puts everything next to each other in a line/on a row */
-    display: inline-block;
+.item-split { 
+    display: inline-block; /* Puts everything next to each other in a line/on a row */
     vertical-align: top;
-    /* padding: auto 25px auto 25px; */
     padding: 25px;
     margin: 2.5%;
-    height: 450px;
-    width: 20%;
+    /* height: auto; */
+    height: 525px;
+    width: 25%;
     
     text-align: center;
     border: solid 1.75px #2134ad;
     border-radius: 20px;
+    box-sizing: border-box;
 }
 
+.item-text {
+    margin: 8px;
+}
 
 .photo {
     width: 170px;
-    /* height: 30%; */
 }
 
-/* change the formatting to be as each section of the team displays without the css */
-/* implement wrapper */
-
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1130px) {
     .item-split {
-        display: inline;
+        display: block;
+        width: auto;
+        height: auto;
+        padding: 20px;
+        margin: 2.5%;
+        border: solid 1.75px #2134ad;
+        border-radius: 20px;
     }
+
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#photohome {
-    float: left; /** lets text go to the right of the image */
-    width: 150px;
-}
-
-/* img {
-    max-width: 100%;
-    height: auto;
-} */
