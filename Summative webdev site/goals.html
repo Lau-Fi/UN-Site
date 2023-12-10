@@ -1,18 +1,18 @@
+<!-- HTML markup for the goals page -->
 <!DOCTYPE html>
 
-  <html lang = "en-US">
-
+  <html lang = "en-US"> <!-- Setting the HTML language to be english (standard). This is good HTML practice. -->
     <head>
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-     <title>UN Goals</title>
-     <script src = "goals_backend.js" defer > </script>
-     <link id = "styletype" rel = "stylesheet" href = "goals.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- The viewport is the entire area of the page. Here we can control the viewport by setting the meta tag and the inital device widith to be 1 which is the standard scale level. -->
+     <div id = "title_id"></div> <!-- Sets the title of the page -->
+     <script src = "goals_backend.js" defer > </script> <!-- Links the Javascript file that dynamically generates the HTML content and controls any CSS changes -->
+     <link id = "styletype" rel = "stylesheet" href = "goals.css"> <!-- Links to the CSS file which styles the HTML page -->
     </head>
 
   <body>
-    <header id = "header">
+    <header id = "header"> <!-- The header is formatted through as a navbar with an unordered list of child elements which act as links. -->
       <nav>
-        <div id = "navbuttons">
+        <div id = "navbuttons"> 
           <ul class = "navbuttons">
             <li class="navigation"></li>
             <li class="navigation active"></li>
@@ -23,22 +23,23 @@
       </nav>
     </header>
     
-    <div id = "button_div">
+    <div id = "button_div"> <!-- This is the id to create the button to toggle on/off the navbar when viewing the page on a small device. The reason for this is that the navbar may get in the way of the user's viewing experience. This allows for higher customisation of their user experience. -->
     </div>
 
-    <div id = "access">
-    </div>
+    <div id = "access"> <!-- Here is the accessibility featres button that hides/shows the accessibility features.  -->
+    </div> <!-- The button has to be double clicked in case the user accidentally clicks it. Once they have been double clicked the menu will not require that feature anymore for inuitiveness as the user clearly wants accessibility features. -->
 
-    <div id = "access_buttons">
+    <div id = "access_buttons"> <!-- Here is the submenu of the accesibility features -->
       <ul class = "access_buttons">
         <li class = "bility"></li>
         <li class = "bility"></li>
       </ul>
     </div>
-    <section id = "section-center"></section>
+    <section id = "section-center"></section> <!-- Finally here is where the main section of the page is genereted. It is done through Javascript item mapping. -->
 
   
 
   </body>
 
 </html>
+<!-- By Laurence Beven -->

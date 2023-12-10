@@ -1,6 +1,6 @@
-/* General styles */
+/* Stylesheet for the goals page */
 
-*{
+*{ /* This wildcard selector changes every element on the page. Here we set a default font and its colour */
   font-family: "metropolis", sweet-sans, sans-serif;
   margin: 0;
   padding: 0;
@@ -12,7 +12,7 @@ head { /** sets the background of the whole page to white **/
   background-color:#fff;
 }
 
-body {
+body { 
   font-size: medium;
   color: black;
   line-height: 1.2;
@@ -76,7 +76,7 @@ nav {
 
 }
 
-.navigation:hover {
+.navigation:hover { /* The hover selector occurs when the user hovers their mouse corsor over the nav bar. Here is changes colour to give a sense of selection and highlights that it is clickable. */
   background-color: #3BF5EE;
   border: #ffffff solid 2px;
   margin: 0px;
@@ -88,7 +88,7 @@ nav {
   top: 0px;
 }
 
-.active {
+.active { /* The active CSS selector will change the nav bar choice depending on which page the user is currently on. */
   background-color: rgb(150, 108, 198);
 }
 
@@ -136,10 +136,34 @@ p {
     border-width: 10px;
     color: black;
     }
-    
+    #access {
+      display: block;
+      background-color: #3BF5EE;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+  } 
+
+  .bility{
+      background-color: #3B4BF5; 
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      top: 10px;
+      position: relative;
+  }
+  #access_buttons {
+    display: none; /* The access buttons are initially hidden. The Javascript function will update the display to be blocked once the access show button is clicked/triggered. */
+  }
    
 
-  @media screen and (max-width:750px) {
+  @media screen and (max-width:750px) { /* This is a CSS media query. It will run the CSS below this when the max width of the page is 750px or less. This is useful if the user is viewing the page from a phone or smaller device. */
   
   #home_button{
     background-color: #009EDB; 
@@ -226,6 +250,14 @@ p {
     
     #button_div{
       display: block;
+      background-color: #673BF5; 
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      top: 10px;
     }
 
     #navbuttons > .navbuttons > #home_button {
@@ -293,9 +325,17 @@ p {
       transform: translateY(-50%);
     }
 
-    .access_buttons {
+    #access {
       display: block;
-    }
+      background-color: #3BF5EE; /* The colours of the website match the moodboard. I have used the block display as opposed to inline for many of these due to it having whitespace above and below it and so looks good on websites to avoid clutter. */
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+  } 
+    
   
     .showButtons{
       height: 300px;
@@ -304,3 +344,5 @@ p {
 
   }
 
+
+/*By Laurence Beven*/
