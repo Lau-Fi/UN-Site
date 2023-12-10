@@ -20,8 +20,6 @@ members.push(teamMember1);
 members.push(teamMember2);
 members.push(teamMember3);
 
-console.log(members.length);
-
 const infoSection = document.querySelector("#info-section");
 
 function loadContent() {

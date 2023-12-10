@@ -39,19 +39,18 @@ class information {
 }
 // https://international-partnerships.ec.europa.eu/policies/sustainable-development-goals_en - img
 const infoOne = new information("img", "photo", "images/SustainabilityGoals.png", "UN Sustainability Plan", "In 2015, all United Nations Member States adopted the 2030 Agenda for Sustainable Development, which provides a shared blueprint for peace and prosperity for people and the planet. It is made up of 17 Sustainable Development Goals, ranging from Quality Education to Affordable and Clean Energy. The Sustainable Development Goals are built on decodes of work by countries and the UN to create a better world for both now and the future.", "https://www.un.org/sustainabledevelopment/sustainable-development-goals/", "Click here to read more.");
-const infoTwo = new information("iframe", "video", "https://www.youtube.com/embed/0XTBYMfZyrM", "In 2023...", "In the 2023 review of the Sustainable Development Goals, it was found that incremental and fragmented change will be insufficient to achieve the goals by the 2030 deadline. The report highlights key changes needed in order to try and accomodate the deadline. It must be a team effort achieved globally. Find out more at:", "https://sdgs.un.org/gsdr/gsdr2023#:~:text=The%20Global%20Sustainable%20Development%20Report%202023&text=Implementation%20of%20the%202030%20Agenda,country%2C%20society%20or%20person%20behind.", "Click here to read the full report.");
+const infoTwo = new information("iframe", "video", "https://www.youtube.com/embed/0XTBYMfZyrM", "In 2023...", "In the 2023 review of the Sustainable Development Goals, it was found that incremental and fragmented change will be insufficient to achieve the goals by the 2030 deadline. The report highlights key changes needed in order to try and accomodate the deadline. It must be a team effort achieved globally.", "https://sdgs.un.org/gsdr/gsdr2023#:~:text=The%20Global%20Sustainable%20Development%20Report%202023&text=Implementation%20of%20the%202030%20Agenda,country%2C%20society%20or%20person%20behind.", "Click here to read the full report.");
 const info = [];
 info.push(infoOne, infoTwo);
-
-// console.log(info);
 
 const section = document.querySelector("#home-info");
 function loadPageContent() {   
     let displayItem = info.map( (item) => {
         return `
         <article id="info">
-            <${item.type} class="${item.className}" src="${item.source}"></${item.type}>
             <h2 id="info-header">${item.title}</h2>
+            <${item.type} class="${item.className}" src="${item.source}"></${item.type}>
+           
             <p class="info-para">${item.content} <a href="${item.link}">${item.linkText}</a> </p>
             
         </article>

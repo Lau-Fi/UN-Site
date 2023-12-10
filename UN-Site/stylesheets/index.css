@@ -104,12 +104,13 @@ p {
     width: fit-content;
     height: 250px;
     margin: 10px 10px;
+    padding-bottom: 20px;
     border: 5px solid #2134ad;
     border-radius: 10px;
 }
 
 #info-header {
-    margin-right: 300px;
+    margin-bottom: 20px;
 }
 
 .info-para {
@@ -121,25 +122,37 @@ p {
 
 .photo {
     float: left;
-    margin-top: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
-    width: 300px;
+    width: 250px;
 }
 
-.video {
+iframe {
     float: right;
-    width: 500px;
-    height: 245px;
+    width: 400px;
+    height: 190px;
 }
 
-#photohome {
-    float: left; /** lets text go to the right of the image */
-    width: 150px;
-}
 
-@media only screen and (max-width: 768px) {
-    body {
-        color: red;
+@media only screen and (max-width: 925px) {
+    #info {
+        display: block;
+        padding: 10px;
+        margin: 10px 10px;
+        height: auto;
+        text-align: center;
+        border: 5px solid #2134ad;
+        border-radius: 10px;
+    }
+
+    .photo {
+        display: inline-block;
+        float: none;
+        width: 300px;
+    }
+    
+    .video {
+        float: none;
+        display: inline-block;
     }
 }
