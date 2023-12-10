@@ -10,9 +10,9 @@ class TeamMember {
     }
 }
 
-const teamMember1 = new TeamMember(1, "Liam Barry", "Team Member", "Navigation, Home and Team pages", "Liam is a Computer Science student studying at UEA. As a career, he would like to work in software engineering. Outside of computing, he enjoys sport, particularly football, F1 and triathlons.", "images/IMG_LMB.jpg");
-const teamMember2 = new TeamMember(2, "James Barnard", "Team Member", "SignUp Page and Combining Code", "James is a Computer Science student at UEA. He hopes to find a career as a programmer after finishing his studies. Outside of study, he enjoys board and computer games, video essays, and media dissection.", "images/IMG_JB.jpg");
-const teamMember3 = new TeamMember(3, "Laurence Beven", "Team Leader", "Goals page and documentation", "Laurence is a Business Information Systems undergraduate, interested in the interaction between people and software for many years. He has managed to provide a great working environment in order to fulfill the project.", "images/IMG_LB.jpg");
+const teamMember1 = new TeamMember(1, "Liam Barry", "Team Member", "Navigation, Home and Team pages", "Liam is a Computer Science student studying at UEA. As a career after his studies, he would like to work in software engineering. Outside of computing, he enjoys sport, particularly football, F1, Indycar and triathlons.", "images/IMG_LMB.jpg");
+const teamMember2 = new TeamMember(2, "James Barnard", "Team Member", "SignUp Page, JSON and Combining Code", "James is a Computer Science student at UEA. He hopes to find a career as a programmer after finishing his studies. Outside of study, he enjoys board and computer games, video essays, and media dissection.", "images/IMG_JB.jpg");
+const teamMember3 = new TeamMember(3, "Laurence Beven", "Team Leader", "Goals page and Website Documentation", "Laurence is a Business Information Systems undergraduate, interested in the interaction between people and software for many years. He has managed to provide a great working environment in order to fulfill the project.", "images/IMG_LB.jpg");
 
 
 const members = [];
